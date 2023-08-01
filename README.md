@@ -47,14 +47,28 @@ Follow the [WCS quickstart](https://weaviate.io/developers/wcs/quickstart) instr
     gcloud config get-value project
     ```
 
-### Running the application
+### Loading the data and running the application
 
-1. Install the dependencies in the `server/` directory and start the server app.
+1. Install the dependencies in the `server/` directory.
+    **books-whisperer/server**
+    ```
+    npm install
+    ```
+
+1. Vectorize and import the sample dataset.
 
     **books-whisperer/server**
     ```
-    npm i && npm start
+    node ./src/importData.js
     ```
+
+1. Start the server app.
+
+    **books-whisperer/server**
+    ```
+    npm start
+    ```
+
 
 1. Open a new terminal window, install the dependencies in the `client/` directory and start the client app.
 
