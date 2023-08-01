@@ -63,3 +63,7 @@ Follow the [WCS quickstart](https://weaviate.io/developers/wcs/quickstart) instr
     npm i && npm start
     ```
 
+1. Open the browser at `http://localhost:4200` and search for books!
+
+    ![Books whisperer demonstration](./assets/BooksWhispererDemo.gif)
+
