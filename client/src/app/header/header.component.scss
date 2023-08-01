@@ -1,0 +1,38 @@
+
+.primary-header {
+    background: linear-gradient(90deg,#d0e4ec,#e0eed3 47%,#cfe4ed);
+    color: #2c3854;
+    padding: 105px 0 85px 12%;
+    margin: -20px 0 50px 0;
+
+    h1 {
+        font-family: 'Niramit Medium', sans-serif;
+        font-weight: normal;
+        font-size: 64px;
+        line-height: 72px;
+    }
+
+    h2 {
+        font-size: 25px;
+        line-height: 32px;
+        color: #001E2B;
+        font-weight: lighter;
+    }
+
+    h3 {
+        font-size: 22px;
+    }
+
+    @media only screen and (max-width: 400px) {
+        padding: 35px;
+
+        h1 {
+            font-size: 45px;
+            text-align: center;
+        }
+
+        h2 {
+            display: none;
+        }
+    }
+}

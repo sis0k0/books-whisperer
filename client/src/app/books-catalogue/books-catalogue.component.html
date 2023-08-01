@@ -1,0 +1,20 @@
+<app-search-bar (itemsFound)="updateItems($event)"></app-search-bar>
+
+<div class="book-card-wrapper">
+    <mat-card class="book-card" *ngFor="let book of books$ | async">
+        <mat-card-header>
+            <mat-card-title class="book-title">{{ book.title }}</mat-card-title>
+        </mat-card-header>
+        <img class="img-link cropped"
+            onerror="this.onerror=null; this.src='http://lgimages.s3.amazonaws.com/gc-md.gif'"
+            width="350" height="500" mat-card-image [src]="book.cover" [alt]="book.title" />
+
+        <mat-card-content class="book-card-content">
+            <span><b>Rating: </b>{{ book.rating }}</span>
+
+            <div>
+                <p class="book-description">{{ book.desc }}</p>
+            </div>
+        </mat-card-content>
+    </mat-card>
+</div>
